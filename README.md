@@ -39,7 +39,7 @@ flowchart TB
 Requires Docker Desktop.
 
 ```bash
-git clone https://github.com/iM-iUser/docker-asset-register.git
+git clone https://github.com/iM-MQ/docker-asset-register.git
 cd docker-asset-register
 cp .env.example .env        # then set your own password
 docker compose up -d --build
