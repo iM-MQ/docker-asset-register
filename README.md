@@ -1,6 +1,6 @@
 # IT Asset Register: Containerised Two-Tier Web App
 
-![Build](https://github.com/iM-iUser/docker-asset-register/actions/workflows/docker-build.yml/badge.svg)
+![Build](https://github.com/iM-MQ/docker-asset-register/actions/workflows/docker-build.yml/badge.svg)
 
 A small internal IT tool for tracking devices (laptops, monitors, phones) and who they are assigned to. Built as a hands-on lab to demonstrate **Docker**, **Docker Compose**, container networking, persistent storage and container security practices.
 
