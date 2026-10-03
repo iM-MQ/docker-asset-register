@@ -103,11 +103,13 @@ I deployed this exact image to Azure as the capstone of my [Terraform Azure Labs
 
 ## Roadmap
 
-- [x] Containerised two-tier app with Docker Compose
-- [x] CI/CD pipeline publishing to GitHub Container Registry
-- [x] Deploy to Azure using **Terraform** ([Lab 05](https://github.com/iM-MQ/terraform-azure-labs/tree/main/lab-05-capstone))
-- [ ] Run on **Kubernetes**, locally and on **AKS** ([Kubernetes Labs](https://github.com/iM-MQ/kubernetes-labs))
-- [ ] Store secrets in **Azure Key Vault**
-- [ ] Rebuild the back end as a REST API with **FastAPI**, with automated tests in the pipeline
-- [ ] Run the app with a production web server (**Gunicorn**) rather than Flask's development server
-- [ ] Automated database backups
+| Status | Item |
+|---|---|
+| ✅ Complete | Containerised two-tier app with Docker Compose |
+| ✅ Complete | CI/CD pipeline publishing to GitHub Container Registry |
+| ✅ Complete | Deploy to Azure using **Terraform** ([Lab 05](https://github.com/iM-MQ/terraform-azure-labs/tree/main/lab-05-capstone)) |
+| 🚧 In progress | Run on **Kubernetes**, locally and on **AKS** ([Kubernetes Labs](https://github.com/iM-MQ/kubernetes-labs)) |
+| ⏳ Planned | Store secrets in **Azure Key Vault** |
+| ⏳ Planned | Rebuild the back end as a REST API with **FastAPI**, with automated tests in the pipeline |
+| ⏳ Planned | Run the app with a production web server (**Gunicorn**) rather than Flask's development server |
+| ⏳ Planned | Automated database backups |
