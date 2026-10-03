@@ -2,11 +2,17 @@
 
 ![Build](https://github.com/iM-MQ/docker-asset-register/actions/workflows/docker-build.yml/badge.svg)
 
+[![Read the Lab Guide](https://img.shields.io/badge/Read%20the-Lab%20Guide-1F6FEB?style=for-the-badge&logo=readthedocs&logoColor=white)](docs/LAB-GUIDE.md)
+
 A small internal IT tool for tracking devices (laptops, monitors, phones) and who they are assigned to. I built it as a hands-on project to learn **Docker** properly: writing my own image, running a multi-container application with **Docker Compose**, segmenting container networks, keeping data persistent, and automating image builds with **GitHub Actions**.
 
 The same image was later deployed to Azure with Terraform. See [Where this went next](#where-this-went-next).
 
-📘 **The full lab write-up, including every test and issue I hit, is in the [Lab Guide](docs/LAB-GUIDE.md).**
+## 📘 Lab Guide
+
+> [!TIP]
+> **The full step-by-step write-up is in the [Lab Guide](docs/LAB-GUIDE.md).**
+> It covers how I built each file and why, the tests I ran, the problems I hit and how I fixed them, and the official documentation I used.
 
 ![Screenshot](docs/screenshot.png)
 
