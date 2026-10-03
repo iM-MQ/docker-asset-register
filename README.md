@@ -429,3 +429,51 @@ The application code did not change at all between my laptop and Azure. Only the
 - [ ] Rebuild the back end as a REST API with **FastAPI**, with automated tests in the pipeline
 - [ ] Run the app with a production web server (**Gunicorn**) rather than Flask's development server
 - [ ] Automated database backups
+
+---
+
+## References
+
+Official documentation I used while building and testing this project.
+
+**Docker basics**
+
+| Topic | Documentation |
+|---|---|
+| What Docker is | [What is Docker? (Docker Docs)](https://docs.docker.com/get-started/docker-overview/) |
+| Installing Docker Desktop | [Install Docker Desktop on Windows (Docker Docs)](https://docs.docker.com/desktop/setup/install/windows-install/) |
+| WSL 2 | [Install WSL (Microsoft Learn)](https://learn.microsoft.com/en-us/windows/wsl/install) |
+
+**Building the image**
+
+| Topic | Documentation |
+|---|---|
+| Dockerfile instructions, including `USER` and `HEALTHCHECK` | [Dockerfile reference (Docker Docs)](https://docs.docker.com/reference/dockerfile/) |
+| Layer order, slim base images and pinned versions | [Building best practices (Docker Docs)](https://docs.docker.com/build/building/best-practices/) |
+| Why `requirements.txt` is copied before `app.py` | [Docker build cache (Docker Docs)](https://docs.docker.com/build/cache/) |
+| `.dockerignore` | [Build context: .dockerignore files (Docker Docs)](https://docs.docker.com/build/concepts/context/) |
+
+**Running it with Compose**
+
+| Topic | Documentation |
+|---|---|
+| `compose.yaml` settings | [Compose file reference (Docker Docs)](https://docs.docker.com/reference/compose-file/) |
+| `depends_on` with `service_healthy` | [Control startup and shutdown order in Compose (Docker Docs)](https://docs.docker.com/compose/how-tos/startup-order/) |
+| Reading settings from `.env` | [Environment variables in Compose (Docker Docs)](https://docs.docker.com/compose/how-tos/environment-variables/) |
+| User-defined networks and built-in DNS | [Bridge network driver (Docker Docs)](https://docs.docker.com/engine/network/drivers/bridge/) |
+| Named volumes | [Volumes (Docker Docs)](https://docs.docker.com/engine/storage/volumes/) |
+| The PostgreSQL image and its settings | [postgres Official Image (Docker Hub)](https://hub.docker.com/_/postgres) |
+
+**Source control and CI/CD**
+
+| Topic | Documentation |
+|---|---|
+| `.gitignore` | [Ignoring files (GitHub Docs)](https://docs.github.com/en/get-started/git-basics/ignoring-files) |
+| The GitHub Actions workflow | [Publishing Docker images (GitHub Docs)](https://docs.github.com/en/actions/tutorials/publish-packages/publish-docker-images) |
+| GitHub Container Registry | [Working with the Container registry (GitHub Docs)](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry) |
+
+**Roadmap**
+
+| Topic | Documentation |
+|---|---|
+| Why Flask's built-in server is not for production | [Deploying to Production (Flask Documentation)](https://flask.palletsprojects.com/en/stable/deploying/) |
